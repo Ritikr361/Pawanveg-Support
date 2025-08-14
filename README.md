@@ -1,31 +1,3 @@
-import React, { useState, useEffect, useRef } from 'react';
-
-// --- Helper Icons (as SVGs) ---
-const SendIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-send">
-    <path d="m22 2-7 20-4-9-9-4Z" />
-    <path d="M22 2 11 13" />
-  </svg>
-);
-
-const FoodIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10H2c0 5.523 4.477 10 10 10z"/><path d="M16 12c0-2.21-1.79-4-4-4s-4 1.79-4 4"/><path d="M18 8c0-1.105-.895-2-2-2s-2 .895-2 2"/><path d="M10 8c0-1.105-.895-2-2-2s-2 .895-2 2"/></svg>
-);
-
-const SparklesIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-sparkles">
-        <path d="m12 3-1.9 4.2-4.2 1.9 4.2 1.9L12 15l1.9-4.2 4.2-1.9-4.2-1.9L12 3z"/>
-        <path d="M5 21v-4"/>
-        <path d="M19 21v-4"/>
-        <path d="M3 15h4"/>
-        <path d="M17 15h4"/>
-    </svg>
-);
-
-
-// --- Main App Component ---
-export default function App() {
-    return (
         <div className="bg-gray-100 min-h-screen font-sans text-gray-800 flex flex-col items-center justify-center p-4">
             <Chatbot />
         </div>
